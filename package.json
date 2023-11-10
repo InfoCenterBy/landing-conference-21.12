@@ -5,7 +5,7 @@
      "main": "index.html",
      "scripts": {
           "test": "echo \"Error: no test specified\" && exit 1",
-          "deploy": "gh-pages -d landing-conference"
+          "deploy": "gh-pages -d landing-conference-21.12"
      },
      "author": "F",
      "license": "ISC",
