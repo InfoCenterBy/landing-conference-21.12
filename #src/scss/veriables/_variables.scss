@@ -1,10 +1,18 @@
 $minWidth: 320px;
 $maxWidth: 1920px;
-$maxWidthContainer: 1500;
+$maxWidthContainer: 1436;
 // $maxWidthContainerPersonal: 1830;
 
 // *Colors*
 :root{
+     --color-white: #FFF;
+     --color-light: #F9B974;
+     --color-green: #00654D;
+     --color-black: #070707;
+     --color-graybg: #F9F9F9;
+     --color-brown: #C47A2C;
+     --color-gray--inputs: #B1B1B1;
+     --color-red: #E94646;
 }
 // *------*
 
@@ -14,6 +22,7 @@ $fontSize: 16px;
 // *!------*
 
 // *? Border*
+$border-15: 15px;
 $border-25: 25px;
 $border-20: 20px;
 // *?------*
