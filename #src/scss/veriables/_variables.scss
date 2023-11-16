@@ -11,14 +11,21 @@ $maxWidthContainer: 1436;
      --color-black: #070707;
      --color-graybg: #F9F9F9;
      --color-brown: #C47A2C;
-     --color-gray--inputs: #B1B1B1;
+     --color-gray-inputs: #B1B1B1;
      --color-red: #E94646;
+     --color-dark-gray: #66605B;
+     --color-gray: #E7E7E7;
+     --color-green-light: #007A65;
 }
 // *------*
 
 
 // *! Fonts*
 $fontSize: 16px;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$ff-Roboto: 'Roboto';
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+$ff-OpSans: 'Open San';
 // *!------*
 
 // *? Border*
@@ -37,6 +44,7 @@ $transition-3: all ease-out .3s;
 $mouse-device: '(hover: hover) and (pointer: fine)';
 $ui-mobile: 'screen and (max-width: 650px)';
 $ui-tablet: 'screen and (max-width: 910px)';
+// *?------*
 
 // *! z-indexs* 
 $layer-back: -1;
@@ -58,3 +66,4 @@ $layer-modal: 4;
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
 }
+// *?------*
