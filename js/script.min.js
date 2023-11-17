@@ -60,7 +60,7 @@ function countDown() {
      timerHours.innerHTML = spareHours;
 
      var timerMin = document.getElementById('timerMin');
-     timerMin.innerHTML = spareHours;
+     timerMin.innerHTML = spareMinutes;
 
      if (milli <= 0) {
           //Time's run out! If all values go to zero
