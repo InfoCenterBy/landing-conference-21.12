@@ -1,0 +1,78 @@
+.banner{
+     height: 732px;
+     background-image: url('../img/png/banner-v1.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     @media #{$ui-tablet} {
+          height: 579px;
+     }
+     &__preview {
+          padding: 3rem 2.25rem 1.25rem ;
+          border-radius: 0px 0px 15px 15px;
+          background-color: var(--color-light);
+          color: var(--color-black);
+          font-style: normal;
+          text-align: center;
+          p{
+               font-weight: 400;
+               line-height: normal;
+               @include adaptiv-value('font-size', 24, 16, 1);
+          }
+          span{
+               font-weight: 600;
+               line-height: 130%;
+               text-transform: uppercase;
+               @include adaptiv-value('font-size', 30, 18, 1);
+          }
+          @media #{$ui-tablet} {
+               padding: 1.5rem 1rem .25rem;
+          }
+	}
+     &__title{
+          display: block;
+          @include adaptiv-value('font-size', 44, 26, 1);
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%;
+          color: var(--color-white);
+          
+          @media #{$ui-tablet} {
+               line-height: normal;
+          }
+          @include adaptiv-value('margin-top', 60, 18, 1);
+     }
+     &__hr-wrapper{
+          position: relative;
+          width: 100%;
+     }
+     &__hr{
+          position: absolute;
+          border-top: 2px solid var(--color-white);
+          width: 405px;
+          left: -240px;
+          bottom: 30px;
+          @media (max-width: 1200px) {
+               position: static;
+               width: 100%;
+               left: 0;
+               bottom: 0;
+               margin-top: 1.75rem;
+          }
+     }
+     .opportun-block{
+          &__text{
+               font-size: 1.25rem;
+               span{
+                    font-size: 2rem;
+               }
+               color: var(--color-white);
+               line-height: normal;
+               font-weight: 500;
+               &:nth-of-type(2n - 1){
+                    border-left: 1.5px solid var(--color-white);
+                    border-right: 1.5px solid var(--color-white);
+               }
+          }
+     }
+}

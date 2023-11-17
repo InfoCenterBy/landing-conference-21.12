@@ -2,4 +2,23 @@
      .color-black{
           color: var(--color-black);
      }
+     .color-white{
+          color: var(--color-white);
+     }
+     .color-brown{
+          color: var(--color-brown);
+     }
+}
+
+
+@layer component{
+     .bg-gray {
+          background-color: var(--color-graybg);
+     }
+     .bg-green {
+          background-color: var(--color-green);
+     }
+     .bg-white{
+          background-color: var(--color-white);
+     }
 }

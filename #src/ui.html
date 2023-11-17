@@ -9,33 +9,40 @@
           <a href="#1" class="border border-1 p-1 color-black">header</a>
           <a href="#2" class="border border-1 p-1 color-black">counter</a>
           <a href="#3" class="border border-1 p-1 color-black">info-blocks</a>
+          <a href="#4" class="border border-1 p-1 color-black">faq</a>
+          <a href="#5" class="border border-1 p-1 color-black">forms</a>
      </div>
      <div class="my-5"></div>
      <div class="ui-content w-100">
           <section id="1" class="bg-secondary p-2">
                <h1 class="h1">header</h1>
-               <header class="header row justify-content-between align-items-center gap-xl-3 gap-0">
-                    <div class="header__logo col-xl-3 col-6" tabindex="-1">
-                         <img src="./img/png/logo-header-v2.png" alt="логотип" >
-                         <p class="d-none d-md-block">
-                              Республиканское унитарное предприятие «Информационно-издательский центр по налогам и сборам»
-                         </p>
-                    </div>
-                    <div class="header__links col-xl-8 col-6 d-flex flex-row justify-content-xl-between justify-content-end align-items-center flex-wrap-no">
-                         <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-xl-block">
-                              О конференции
-                         </a>
-                         <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-xl-block">
-                              Программа
-                         </a>
-                         <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-xl-block">
-                              Стоимость участия
-                         </a>
-                         <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-xl-block">
-                              Контакты
-                         </a>
-                         <div class="button button-orange" tabindex="0">
-                              Зарегистрироваться
+               <header class="header">
+                    <div class="container">
+                         <div class="row justify-content-between align-items-center gap-xl-3 gap-0">
+                              <div class="header__logo col-xl-3 col-6" tabindex="-1">
+                                   <img src="./img/png/logo-header-v2.png" alt="логотип">
+                                   <p class="d-none d-md-block">
+                                        Республиканское унитарное предприятие «Информационно-издательский центр по налогам и сборам»
+                                   </p>
+                              </div>
+                              <div
+                                   class="header__links col-xl-8 col-6 d-flex flex-row justify-content-xl-between justify-content-end align-items-center flex-wrap-no">
+                                   <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-xl-block">
+                                        О конференции
+                                   </a>
+                                   <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-xl-block">
+                                        Программа
+                                   </a>
+                                   <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-xl-block">
+                                        Стоимость участия
+                                   </a>
+                                   <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-xl-block">
+                                        Контакты
+                                   </a>
+                                   <div class="button button-orange" tabindex="0">
+                                        Зарегистрироваться
+                                   </div>
+                              </div>
                          </div>
                     </div>
                </header>
@@ -56,7 +63,7 @@
                     </div>
                </div>
           </section>
-          <section id="3" class=" p-3 mt-5">
+          <section id="3" class="p-3 mt-5">
                <h1 class="h1">info-blocks</h1>
                <div class="row">
                     <div class="col-lg-4 d-flex my-2">
@@ -253,7 +260,247 @@
                     </div>
                </div>
           </section>
+          <section id="4" class="p-3 mt-5">
+               <h1 class="h1">faq</h1>
+               <div class="accordion faq-block" id="accordionFlushExample">
+                    <div class="row">
+                         <div class="col-md-6">
+                              <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                   Accordion Item #1
+                              </button>
+                         </h2>
+                         <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                   <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                   Accordion Item #2
+                              </button>
+                         </h2>
+                         <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                   <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                                   being filled with some actual content.</div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                   Accordion Item #3
+                              </button>
+                         </h2>
+                         <div id="flush-collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                   <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                   happening here in terms of content, but just filling up the space to make it look, at least at first
+                                   glance, a bit more representative of how this would look in a real-world application.</div>
+                         </div>
+                    </div>
+                         </div>
+                         <div class="col-md-6">
+                              <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                   Accordion Item #4
+                              </button>
+                         </h2>
+                         <div id="flush-collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                   <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                                   Accordion Item #5
+                              </button>
+                         </h2>
+                         <div id="flush-collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                   <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                                   being filled with some actual content.</div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                                   Accordion Item #6
+                              </button>
+                         </h2>
+                         <div id="flush-collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                                   <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                                   happening here in terms of content, but just filling up the space to make it look, at least at first
+                                   glance, a bit more representative of how this would look in a real-world application.</div>
+                         </div>
+                    </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="5" class="p-3 mt-5">
+               <h1 class="h1">forms</h1>
+               <div class="row">
+                    <div class="col-lg-6 d-flex">
+                         <div class="bg-gray w-100 form-wrapper">
+                              <div class="form-title">Задайте вопрос организаторам</div>
+                              <form action="" class="main-form row needs-validation" novalidate>
+                                   <div class="col-md-6 my-2">
+                                        <label for="validationCustomUsername" class="form-label">Имя</label>
+                                        <div class="input-group has-validation">
+                                             <input type="text" class="form-control" 
+                                             id="validationCustomUsername" aria-describedby="inputGroupPrepend" 
+                                             required placeholder="Имя">
+                                             <div class="invalid-feedback">
+                                                  Пожалуйста заполните имя
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-md-6 my-2">
+                                        <label for="validationCustomEmail" class="form-label">Электронная почта</label>
+                                        <div class="input-group has-validation">
+                                             <input type="email" 
+                                             class="form-control" 
+                                             id="validationCustomEmail" 
+                                             aria-describedby="emailHelp"
+                                             placeholder="Электронная почта"
+                                             required>
+                                             <div class="invalid-feedback">
+                                                  Неверный адрес электронной почты
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-md-6 my-2">
+                                        <label for="validationCustomTel" class="form-label">Номер телефона</label>
+                                        <div class="input-group has-validation">
+                                             <input type="tel" class="form-control" id="validationCustomTel" aria-describedby="telHelp"
+                                                  placeholder="+375 (__) ___-__-__"
+                                                  pattern="^\+375 \((17|29|33|44)\) [0-9]{3}-[0-9]{2}-[0-9]{2}$"
+                                                  required>
+                                             <div class="invalid-feedback">
+                                                  Неверный номер телефона
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-12 my-2">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                                        <textarea class="form-control" 
+                                        id="exampleFormControlTextarea1" 
+                                        rows="3" 
+                                        placeholder="Введите сообщение"></textarea>
+                                   </div>
+                                   <div class="col-12 my-2">
+                                        <div class="form-check">
+                                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                             <label class="form-check-label" for="invalidCheck">
+                                                  Согласие на обработку 
+                                                  <a href="" target="_blank" rel="noopener noreferrer" class="color-brown">
+                                                       персональных данных
+                                                  </a>
+                                             </label>
+                                             <div class="invalid-feedback">
+                                                  Требуется подтверждение перед отправкой
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-12 my-2">
+                                        <button class="button button-orange w-100" type="submit">
+                                             Отправить
+                                        </button>
+                                   </div>
+                              </form>
+                         </div>
+                    </div>
+                    <div class="col-lg-6 d-flex">
+                         <div class="bg-green w-100 form-wrapper">
+                              <div class="form-title">Задайте вопрос лектору</div>
+                              <form action="" class="main-form row needs-validation" novalidate>
+                                   <div class="col-md-6 my-2">
+                                        <label for="validationCustomUsername" class="form-label">Имя</label>
+                                        <div class="input-group has-validation">
+                                             <input type="text" class="form-control" 
+                                             id="validationCustomUsername" 
+                                             aria-describedby="inputGroupPrepend" required
+                                             placeholder="Имя">
+                                             <div class="invalid-feedback">
+                                                  Пожалуйста заполните имя
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-md-6 my-2">
+                                        <label for="validationCustomEmail" class="form-label">Электронная почта</label>
+                                        <div class="input-group has-validation">
+                                             <input type="email" 
+                                             class="form-control" 
+                                             id="validationCustomEmail" 
+                                             aria-describedby="emailHelp" 
+                                             placeholder="Электронная почта"
+                                             required>
+                                             <div class="invalid-feedback">
+                                                  Неверный адрес электронной почты
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-md-6 my-2">
+                                        <label for="validationCustomTel" class="form-label">Номер телефона</label>
+                                        <div class="input-group has-validation">
+                                             <input type="tel" class="form-control" id="validationCustomTel" aria-describedby="telHelp"
+                                                  placeholder="+375 (__) ___-__-__" pattern="^\+375 \((17|29|33|44)\) [0-9]{3}-[0-9]{2}-[0-9]{2}$" required>
+                                             <div class="invalid-feedback">
+                                                  Неверный номер телефона
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-12 my-2">
+                                        <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                                        <textarea class="form-control" 
+                                        id="exampleFormControlTextarea1" 
+                                        rows="3" 
+                                        placeholder="Введите сообщение"></textarea>
+                                   </div>
+                                   <div class="col-12 my-2">
+                                        <div class="form-check">
+                                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                             <label class="form-check-label" for="invalidCheck">
+                                                  Согласие на обработку 
+                                                  <a href="" target="_blank" rel="noopener noreferrer" class="color-brown">
+                                                       персональных данных
+                                                  </a>
+                                             </label>
+                                             <div class="invalid-feedback">
+                                                  Требуется подтверждение перед отправкой
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="col-12 my-2">
+                                        <button class="button button-orange w-100" type="submit">
+                                             Отправить
+                                        </button>
+                                   </div>
+                              </form>
+                              <p class="mt-4 color-white">
+                                   Вопросы с указанием темы по программе практической конференции просим направлять до 
+                                   <span class="color-brown">15.12.2023.</span>
+                              </p>
+                         </div>
+                    </div>
+               </div>
+          </section>
      </div>
+     <div class="my-5"></div>
+     <div class="my-5"></div>
+     <div class="my-5"></div>
      <script src="js/script.min.js"></script>
 </body>
 </html>
