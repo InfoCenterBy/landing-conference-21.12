@@ -174,7 +174,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: var(--color-dark-gray);
-  font-family: 'Open San';
+  font-family: 'Open Sans';
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 120%;
