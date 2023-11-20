@@ -4,16 +4,7 @@
      font-weight: 500;
      line-height: normal;
 }
-.bg-green{
-     .form-title{
-          color: var(--color-white);
-     }
-}
-.bg-gray{
-     .form-title{
-          color: var(--color-black);
-     }
-}
+
 .main-form {
      padding: 1.25rem 1.5rem;
      padding-bottom: 1.5rem;
@@ -66,5 +57,15 @@
      padding: 2rem 2.5rem;
      @media #{$ui-tablet} {
           padding: 1rem 1.5rem;
+     }
+     &.bg-green{
+          .form-title{
+               color: var(--color-white);
+          }
+     }
+     &.bg-gray{
+          .form-title{
+               color: var(--color-black);
+          }
      }
 }
