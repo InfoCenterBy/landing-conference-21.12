@@ -186,7 +186,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 130%;
-  padding: 2rem 1.5rem 0;
+  padding: 0.75rem 1.5rem 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -221,6 +221,7 @@
   border-radius: 5px;
   background-color: var(--color-gray);
   padding: 0.25rem 0.875rem;
+  font-weight: 600;
 }
 .info-block__cost {
   text-align: center;
@@ -268,6 +269,9 @@
 }
 .info-block-highlight .info-block__head {
   font-size: 1.5rem;
+  height: auto;
+  padding: 22px 0;
+  font-weight: 600;
 }
 .info-block-highlight .info-block__text > p {
   font-weight: 600;
@@ -381,5 +385,14 @@
 @media (hover: hover) and (pointer: fine) {
   .hover-orange:hover {
     color: var(--color-brown);
+  }
+}
+
+section.container:not(:first-of-type) {
+  margin-top: 6.25rem;
+}
+@media screen and (max-width: 910px) {
+  section.container:not(:first-of-type) {
+    margin-top: 2.5rem;
   }
 }

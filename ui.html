@@ -23,6 +23,8 @@
           <a href="#4" class="border border-1 p-1 color-black">faq</a>
           <a href="#5" class="border border-1 p-1 color-black">forms</a>
           <a href="#6" class="border border-1 p-1 color-black">programm conf</a>
+          <a href="#7" class="border border-1 p-1 color-black">modal</a>
+
      </div>
      <div class="my-5"></div>
      <div class="ui-content w-100">
@@ -509,7 +511,7 @@
                     </div>
                </div>
           </section>
-          <section id="5" class="p-3 mt-5">
+          <section id="6" class="p-3 mt-5">
                <h1 class="h1">programm conf</h1>
                     <div class="programm w-100 mt-4">
           <div class="programm-block">
@@ -993,6 +995,139 @@
                </div>
           </div>
      </div>
+          </section>
+          <section id="7" class="p-3 mt-5">
+               <h1 class="h1">modal</h1>
+               <div class="d-flex w-100 justify-content-center">
+                    <button type="button" class="button button-orange" data-bs-toggle="modal" data-bs-target="#registryModal">
+                         Launch demo modal
+                    </button>
+               </div>
+               <div class="modal fade" id="registryModal" tabindex="-1" aria-labelledby="registryModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+               <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close m" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body pt-0">
+                    <div class="w-100 text-center">
+                         <h1 class="modal-title fs-5 fw-bold" id="registryModalLabel">Зарегистрироваться на конференцию
+                         </h1>
+                    </div>
+                    <div class="text-center mt-3">
+                         <span class="color-brown">
+                              Стоимость офлайн участия составляет 316,80 руб.
+                         </span>
+                    </div>
+                    <form action="" class="main-form row needs-validation px-0 py-0 mt-2" novalidate="">
+                         <div class="col-12 my-2 d-flex flex-row flex-wrap justify-content-around">
+                              <div class="form-check ms-lg-5">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" required>
+                                   <label class="form-check-label" for="flexRadioDefault1">
+                                        Участие офлайн
+                                   </label>
+                              </div>
+                              <div class="form-check me-lg-5">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                   <label class="form-check-label" for="flexRadioDefault2">
+                                        Участие онлайн
+                                   </label>
+                              </div>
+                         </div>
+                         <div class="col-12 my-2">
+                              <label for="validationCustomUsername3" class="form-label">Имя*</label>
+                              <div class="input-group has-validation">
+                                   <input type="text" class="form-control" id="validationCustomUsername3"
+                                        aria-describedby="inputGroupPrepend" required="" placeholder="Имя">
+                                   <div class="invalid-feedback">
+                                        Пожалуйста заполните имя
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-12 my-2">
+                              <label for="validationCustomEmail3" class="form-label">Электронная почта*</label>
+                              <div class="input-group has-validation">
+                                   <input type="email" class="form-control" id="validationCustomEmail3"
+                                        aria-describedby="emailHelp" placeholder="Электронная почта" required="">
+                                   <div class="invalid-feedback">
+                                        Неверный адрес электронной почты
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-12 my-2">
+                              <label for="validationCustomTel3" class="form-label">Номер телефона*</label>
+                              <div class="input-group has-validation">
+                                   <input type="tel" class="form-control" id="validationCustomTel3"
+                                        aria-describedby="telHelp" placeholder="+375 (__) ___-__-__"
+                                        required="">
+                                   <div class="invalid-feedback">
+                                        Неверный номер телефона
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-12 my-2">
+                              <label for="сustomUNP" class="form-label">УНП</label>
+                              <div class="input-group">
+                                   <input type="text" class="form-control" id="сustomUNP"
+                                        aria-describedby="inputGroupPrepend" placeholder="УНП">
+                              </div>
+                         </div>
+                         <div class="col-12 my-2">
+                              <label for="exampleFormControlTextarea3" class="form-label">Сообщение</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea3" rows="3"
+                                   placeholder="Введите сообщение"></textarea>
+                         </div>
+                         <div class="col-12 my-2">
+                              <div class="form-check">
+                                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
+                                        required="">
+                                   <label class="form-check-label" for="invalidCheck3">
+                                        Согласие на обработку
+                                        <a href="https://info-center.by/company/politika-obrabotki-personalnykh-dannykh/"
+                                             target="_blank" rel="noopener noreferrer" class="color-brown">
+                                             персональных данных
+                                        </a>
+                                   </label>
+                                   <div class="invalid-feedback">
+                                        Требуется подтверждение перед отправкой
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="col-12 my-2">
+                              <button class="button button-orange w-100" data-bs-toggle="modal" data-bs-target="#successModal">
+                                   Зарегистрироваться
+                              </button>
+                         </div>
+                    </form>
+               </div>
+          </div>
+     </div>
+</div>
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+               <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close m" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body pt-0 pb-5">
+                    <div class="w-100 text-center">
+                         <h1 class="modal-title fs-5 fw-bold" id="successModalLabel">
+                              Вы зарегистрировались на конференцию
+                         </h1>
+                    </div>
+                    <div class="text-center mt-3">
+                         <p>
+                              Вы зарегистрировались на практическую конференцию «Практика применения законодательства в сфере налогообложения
+                              и основные изменения в 2024 году», которая пройдёт 21 декабря 2023 г. 9:00–18:00.
+                         </p>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
           </section>
      </div>
      <div class="my-5"></div>
