@@ -209,7 +209,7 @@ body {
     gap: calc(8px + 28 * (100vw - 320px) / 1116);
   }
 }
-.header__links a {
+.header__links a:not(.button) {
   color: var(--color-black);
   font-family: 'Roboto';
   font-size: 1rem;
@@ -219,7 +219,7 @@ body {
   transition: all ease-out 0.3s;
 }
 @media (hover: hover) and (pointer: fine) {
-  .header__links a:hover {
+  .header__links a:not(.button):hover {
     color: var(--color-brown);
   }
 }
