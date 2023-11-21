@@ -164,7 +164,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  z-index: 3;
+  z-index: 10;
 }
 @media screen and (max-width: 910px) {
   .header {
@@ -753,6 +753,9 @@ section.container:not(:first-of-type) {
   .banner {
     height: 579px;
   }
+}
+.banner .banner-content {
+  margin-top: 6.25rem;
 }
 .banner__preview {
   padding: 3rem 2.25rem 1.25rem;
