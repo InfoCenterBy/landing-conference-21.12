@@ -18,6 +18,16 @@
      });
 })();
 
+document
+     .querySelector('#collapseProgrammBtn')
+     .addEventListener('click', (e) => {
+          if (!e.target.classList.contains('collapsed')) {
+               e.target.innerHTML = 'Свернуть';
+          } else {
+               e.target.innerHTML = 'Читать полностью';
+          }
+     });
+
 window.setInterval(countDown, 1000);
 
 function countDown() {

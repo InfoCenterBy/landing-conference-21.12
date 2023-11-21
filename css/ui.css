@@ -47,6 +47,14 @@
   font-size: 1.25rem !important;
 }
 
+.fs-24 {
+  font-size: 1.5rem !important;
+}
+
+.border-15 {
+  border-radius: 15px;
+}
+
 .button {
   display: grid;
   place-items: center;
@@ -148,7 +156,30 @@
   font-size: 1.25rem;
   font-weight: 500;
   line-height: normal;
-  padding: 2.5rem 1rem;
+  padding: 1rem 1rem;
+  height: 6.5rem;
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 1310px) {
+  .info-block__head {
+    height: 8rem;
+  }
+}
+@media (max-width: 1200px) {
+  .info-block__head {
+    height: 11rem;
+  }
+}
+@media screen and (max-width: 910px) {
+  .info-block__head {
+    height: 7rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .info-block__head {
+    height: 11rem;
+  }
 }
 .info-block__text {
   color: var(--color-black);
@@ -272,4 +303,73 @@
 .check-list__item .bi-check-lg {
   font-size: 1.25rem;
   line-height: 1.25rem;
+}
+
+.block-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 910px) {
+  .block-text {
+    padding: 1rem 0.75rem;
+  }
+}
+@media (max-width: 1436px) {
+  .block-text {
+    font-size: calc(18px + 2 * (100vw - 320px) / 1116);
+  }
+}
+.block-text-bg {
+  padding: 2rem 4rem;
+  border-radius: 20px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+}
+@media (max-width: 1436px) {
+  .section-title {
+    font-size: calc(28px + 8 * (100vw - 320px) / 1116);
+  }
+}
+
+.geo-block {
+  padding: 2rem;
+}
+@media screen and (max-width: 910px) {
+  .geo-block {
+    padding: 1rem;
+  }
+}
+.geo-block__title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--color-green);
+}
+@media (max-width: 1436px) {
+  .geo-block__title {
+    font-size: calc(18px + 6 * (100vw - 320px) / 1116);
+  }
+}
+
+.partner__item-wrapper {
+  border-right: 1.5px solid var(--color-green);
+  display: grid;
+  place-items: center;
+}
+@media (max-width: 992px) {
+  .partner__item-wrapper {
+    border-right: 0;
+  }
+}
+.partner__item {
+  border-radius: 10px;
+  background: #d9d9d9;
+  width: 250px;
+  height: 80px;
 }
