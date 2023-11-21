@@ -597,6 +597,16 @@ body {
   height: 80px;
 }
 
+.hover-orange {
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .hover-orange:hover {
+    color: var(--color-brown);
+  }
+}
+
 @layer component {
   .faq-block .accordion-item {
     border-radius: 15px;
