@@ -755,7 +755,7 @@ section.container:not(:first-of-type) {
   }
 }
 .banner .banner-content {
-  margin-top: 90px;
+  margin-top: 5.75rem;
 }
 .banner__preview {
   padding: 3rem 2.25rem 1.25rem;
