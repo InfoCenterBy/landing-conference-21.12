@@ -1,4 +1,3 @@
-@layer component{
      .color-black{
           color: var(--color-black);
      }
@@ -14,10 +13,8 @@
      .color-dark-gray{
           color: var(--color-dark-gray);
      }
-}
 
 
-@layer component{
      .bg-gray {
           background-color: var(--color-graybg);
      }
@@ -27,10 +24,7 @@
      .bg-white{
           background-color: var(--color-white);
      }
-}
 
-@layer component{
      .border-green {
           border: 1.5px solid var(--color-green);
      }
-}

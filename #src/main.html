@@ -9,7 +9,7 @@
           @@include('./html-comp/_banner.html')
      </div>
      <main>
-          <section class="container mt-4">
+          <section class="container mt-5">
                <div class="block-text block-text-bg text-center bg-gray">
                     <p class="">
                          <b class="color-green">Традиционная практическая конференция</b> — это площадка для коммуникации лучших профессионалов, обмена опытом
@@ -18,7 +18,7 @@
                     </p>
                </div>
           </section>
-          <section class="container mt-4">
+          <section class="container">
                <div class="section-title">
                     Для кого предназначена конференция
                </div>
@@ -119,11 +119,11 @@
                     </div>
                </div>
           </section>
-          <section class="container mt-4">
+          <section class="container">
                <div class="row justify-content-between mb-2 align-items-center">
                     <div class="col-lg-10 order-lg-1 order-1">
                          <div class="section-title">
-                              Для кого предназначена конференция
+                              Программа конференции
                          </div>
                     </div>
                     <div class="col-lg-2 order-3 order-lg-2">
@@ -143,8 +143,8 @@
                     </div>
                </div>
           </section>
-          <section class="container mt-4">
-               <div class="section-title">
+          <section class="container">
+               <div class="section-title" id="registr">
                     Регистрация
                </div>
                <div class="row mt-3">
@@ -207,7 +207,8 @@
                                    </div>
                                    <div class="info-block__cost mt-auto">
                                         <span>316,80 руб.</span>
-                                        <div class="button button-orange w-100">
+                                        <div class="button button-orange w-100" 
+                                        type="button" data-bs-toggle="modal" data-bs-target="#registryModal">
                                              Зарегистрироваться
                                         </div>
                                    </div>
@@ -261,7 +262,8 @@
                                    </div>
                                    <div class="info-block__cost mt-auto">
                                         <span>240,00 руб.</span>
-                                        <div class="button button-green w-100">
+                                        <div class="button button-green w-100" 
+                                        type="button" data-bs-toggle="modal" data-bs-target="#registryModal">
                                              Зарегистрироваться
                                         </div>
                                    </div>
@@ -274,7 +276,7 @@
                          </div>
                     </div>
                     <div class="col-lg-4 d-flex justify-content-between flex-column my-3">
-                         <div class="border-15 border-green px-4 py-3">
+                         <div class="border-15 border-green px-4 py-3 bg-white">
                               <p class="text-center mb-0 color-green fs-24">
                                    <b>
                                         Скидка в размере 10%
@@ -288,7 +290,7 @@
                                    издания.
                               </p>
                          </div>
-                         <div class="border-15 border-green px-4 py-3 mt-3">
+                         <div class="border-15 border-green px-4 py-3 mt-3 bg-white">
                               <p class="text-center mb-0 color-green fs-24">
                                    <b>
                                         Скидка в размере 20%
@@ -328,7 +330,7 @@
                     </div>
                </div>
           </section>
-          <section class="container mt-5">
+          <section class="container">
                <div class="section-title">
                     Часто задаваемые вопросы
                </div>
@@ -443,12 +445,12 @@
                     </div>
                </div>
           </section>
-          <section class="container mt-5">
+          <section class="container">
                <div class="section-title">
                     Остались вопросы?
                </div>
                <div class="row">
-                    <div class="col-lg-6 d-flex">
+                    <div class="col-lg-6 d-flex my-2">
                          <div class="bg-gray w-100 form-wrapper">
                               <div class="form-title">Задайте вопрос организаторам</div>
                               <form action="" class="main-form row needs-validation" novalidate="">
@@ -477,7 +479,7 @@
                                         <div class="input-group has-validation">
                                              <input type="tel" class="form-control" id="validationCustomTel" aria-describedby="telHelp"
                                                   placeholder="+375 (__) ___-__-__"
-                                                  pattern="^\+375 \((17|29|33|44)\) [0-9]{3}-[0-9]{2}-[0-9]{2}$" required="">
+                                                  required="">
                                              <div class="invalid-feedback">
                                                   Неверный номер телефона
                                              </div>
@@ -493,7 +495,8 @@
                                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
                                              <label class="form-check-label" for="invalidCheck">
                                                   Согласие на обработку
-                                                  <a href="" target="_blank" rel="noopener noreferrer" class="color-brown">
+                                                  <a href="https://info-center.by/company/politika-obrabotki-personalnykh-dannykh/" 
+                                                  target="_blank" rel="noopener noreferrer" class="color-brown">
                                                        персональных данных
                                                   </a>
                                              </label>
@@ -503,21 +506,21 @@
                                         </div>
                                    </div>
                                    <div class="col-12 my-2">
-                                        <button class="button button-orange w-100" type="submit">
+                                        <button class="button button-orange w-100" data-bs-toggle="modal" data-bs-target="#successQUAModal">
                                              Отправить
                                         </button>
                                    </div>
                               </form>
                          </div>
                     </div>
-                    <div class="col-lg-6 d-flex">
+                    <div class="col-lg-6 d-flex my-2">
                          <div class="bg-green w-100 form-wrapper">
                               <div class="form-title">Задайте вопрос лектору</div>
                               <form action="" class="main-form row needs-validation" novalidate="">
                                    <div class="col-md-6 my-2">
-                                        <label for="validationCustomUsername" class="form-label">Имя</label>
+                                        <label for="validationCustomUsername2" class="form-label">Имя</label>
                                         <div class="input-group has-validation">
-                                             <input type="text" class="form-control" id="validationCustomUsername"
+                                             <input type="text" class="form-control" id="validationCustomUsername2"
                                                   aria-describedby="inputGroupPrepend" required="" placeholder="Имя">
                                              <div class="invalid-feedback">
                                                   Пожалуйста заполните имя
@@ -525,9 +528,9 @@
                                         </div>
                                    </div>
                                    <div class="col-md-6 my-2">
-                                        <label for="validationCustomEmail" class="form-label">Электронная почта</label>
+                                        <label for="validationCustomEmail2" class="form-label">Электронная почта</label>
                                         <div class="input-group has-validation">
-                                             <input type="email" class="form-control" id="validationCustomEmail"
+                                             <input type="email" class="form-control" id="validationCustomEmail2"
                                                   aria-describedby="emailHelp" placeholder="Электронная почта" required="">
                                              <div class="invalid-feedback">
                                                   Неверный адрес электронной почты
@@ -535,27 +538,28 @@
                                         </div>
                                    </div>
                                    <div class="col-md-6 my-2">
-                                        <label for="validationCustomTel" class="form-label">Номер телефона</label>
+                                        <label for="validationCustomTel2" class="form-label">Номер телефона</label>
                                         <div class="input-group has-validation">
-                                             <input type="tel" class="form-control" id="validationCustomTel" aria-describedby="telHelp"
+                                             <input type="tel" class="form-control" id="validationCustomTel2" aria-describedby="telHelp"
                                                   placeholder="+375 (__) ___-__-__"
-                                                  pattern="^\+375 \((17|29|33|44)\) [0-9]{3}-[0-9]{2}-[0-9]{2}$" required="">
+                                                   required="">
                                              <div class="invalid-feedback">
                                                   Неверный номер телефона
                                              </div>
                                         </div>
                                    </div>
                                    <div class="col-12 my-2">
-                                        <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        <label for="exampleFormControlTextarea2" class="form-label">Сообщение</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"
                                              placeholder="Введите сообщение"></textarea>
                                    </div>
                                    <div class="col-12 my-2">
                                         <div class="form-check">
-                                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
-                                             <label class="form-check-label" for="invalidCheck">
+                                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required="">
+                                             <label class="form-check-label" for="invalidCheck2">
                                                   Согласие на обработку
-                                                  <a href="" target="_blank" rel="noopener noreferrer" class="color-brown">
+                                                  <a href="https://info-center.by/company/politika-obrabotki-personalnykh-dannykh/" 
+                                                  target="_blank" rel="noopener noreferrer" class="color-brown">
                                                        персональных данных
                                                   </a>
                                              </label>
@@ -565,7 +569,7 @@
                                         </div>
                                    </div>
                                    <div class="col-12 my-2">
-                                        <button class="button button-orange w-100" type="submit">
+                                        <button class="button button-orange w-100" data-bs-toggle="modal" data-bs-target="#successQUAModal">
                                              Отправить
                                         </button>
                                    </div>
@@ -578,11 +582,11 @@
                     </div>
                </div>
           </section>
-          <section class="container mt-5">
+          <section class="container">
                <div class="section-title">
                     Место проведения
                </div>
-               <div class="row">
+               <div class="row mt-4">
                     <div class="col-lg-6 d-flex">
                          <div class="bg-gray geo-block border-20">
                               <div class="geo-block__title">
@@ -637,37 +641,37 @@
                     </div>
                </div>
           </section>
-          <section class="container mt-5">
+          <section class="container">
                <div class="section-title">
                     Организаторы конференции
                </div>
                <div class="row mt-4">
                     <div class="col-lg-4 d-flex align-items-center my-2">
-                         <div class="d-flex flex-row align-items-center">
+                         <a href="https://info-center.by/" target="_blank" rel="noopener noreferrer" class="d-flex flex-row align-items-center">
                               <div class="">
                                    <img src="./img/png/logo-header-v2.png" alt="">
                               </div>
                               <p class="mb-0 fs-14 ms-3">
-                                   <b>
+                                   <b class="color-black">
                                         Республиканское унитарное предприятие«Информационно-издательский центр по налогам и сборам»
                                    </b>
                               </p>
-                         </div>
+                         </a>
                     </div>
                     <div class="col-lg-4 d-flex align-items-center my-2">
-                         <div class="d-flex flex-row align-items-center">
+                         <a href="https://taxpayer.by/" target="_blank" rel="noopener noreferrer class="d-flex flex-row align-items-center">
                               <div class="">
                                    <img src="./img/png/logo-2.png" alt="">
                               </div>
-                         </div>
+                         </a>
                     </div>
                     <div class="col-12 mt-5">
                          <div class="bg-gray text-center py-3 px-4 border-20">
-                              <p>
+                              <p class="mb-0">
                                    Более подробно о программе практической конференции, стоимости участия и условиях предоставления скидок можно узнать по
                                    телефонам:
                               </p>
-                              <div class="px-5">
+                              <div class="px-5 mt-2">
                                    <div class="row">
                                         <div class="col-lg-3 my-1">
                                              <a href="tel:+375(25)691–46–45" class="color-brown fs-20">
@@ -695,7 +699,7 @@
                     </div>
                </div>
           </section>
-          <section class="container mt-5">
+          <section class="container">
                <div class="section-title">
                     Как это было
                </div>
@@ -727,13 +731,13 @@
                     </div>
                </div>
           </section>
-          <section class="container mt-5">
+          <section class="container">
                <div class="section-title">
                     Партнеры
                </div>
                <div class="partner px-lg-5 mt-4">
                     <div class="row ">
-                         <div class="col-lg-3">
+                         <div class="col-lg-3 my-2">
                               <div class="partner__item-wrapper">
                                    <div class="partner__item">
                     
@@ -741,7 +745,7 @@
                               </div>
                     
                          </div>
-                         <div class="col-lg-3">
+                         <div class="col-lg-3 my-2">
                               <div class="partner__item-wrapper">
                                    <div class="partner__item">
                     
@@ -749,7 +753,7 @@
                               </div>
                     
                          </div>
-                         <div class="col-lg-3">
+                         <div class="col-lg-3 my-2">
                               <div class="partner__item-wrapper">
                                    <div class="partner__item">
                     
@@ -757,7 +761,7 @@
                               </div>
                     
                          </div>
-                         <div class="col-lg-3">
+                         <div class="col-lg-3 my-2">
                               <div class="partner__item-wrapper border-0">
                                    <div class="partner__item">
                     
@@ -770,6 +774,8 @@
                     
           </section>
      </main>
+     @@include('./html-comp/_modal.html')
+     @@include('./html-comp/_modal-qua.html')
      @@include('./html-comp/_footer.html')
      @@include('./html-comp/_script.html')
 </body>

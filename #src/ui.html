@@ -12,6 +12,8 @@
           <a href="#4" class="border border-1 p-1 color-black">faq</a>
           <a href="#5" class="border border-1 p-1 color-black">forms</a>
           <a href="#6" class="border border-1 p-1 color-black">programm conf</a>
+          <a href="#7" class="border border-1 p-1 color-black">modal</a>
+
      </div>
      <div class="my-5"></div>
      <div class="ui-content w-100">
@@ -498,9 +500,20 @@
                     </div>
                </div>
           </section>
-          <section id="5" class="p-3 mt-5">
+          <section id="6" class="p-3 mt-5">
                <h1 class="h1">programm conf</h1>
                @@include('./html-comp/_programm-conf.html')
+          </section>
+          <section id="7" class="p-3 mt-5">
+               <h1 class="h1">modal</h1>
+               <!-- Button trigger modal -->
+               <div class="d-flex w-100 justify-content-center">
+                    <button type="button" class="button button-orange" data-bs-toggle="modal" data-bs-target="#registryModal">
+                         Launch demo modal
+                    </button>
+               </div>
+               <!-- Modal -->
+               @@include('./html-comp/_modal.html')
           </section>
      </div>
      <div class="my-5"></div>

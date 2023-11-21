@@ -28,6 +28,9 @@
           line-height: normal;
 	}
 }
+#collapseProgramm{
+     margin-top: 1.25rem;
+}
 .programm-profile {
      width: 100%;
      background-color: var(--color-white);
@@ -50,7 +53,7 @@
 	&__title {
           color: var(--color-green);
           @include adaptiv-value('font-size', 18, 16, 1);
-          font-weight: 500;
+          font-weight: 600;
           line-height: normal;
 	}
 

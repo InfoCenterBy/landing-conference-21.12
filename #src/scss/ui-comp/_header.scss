@@ -6,7 +6,7 @@
 	padding: 1rem;
 	display: flex; justify-content: center;
 	position: relative;
-	z-index: $layer-ui;
+	z-index: 10;
 	@media #{$ui-tablet} {
 		border-radius: 0;
 	}
@@ -16,9 +16,9 @@
 		align-items: center;
 		justify-content: space-between;
 		color: var(--color-dark-gray);
-		font-family: $ff-OpSans;
+		font-family: $ff-Roboto;
 		font-size: .875rem;
-		font-weight: 600;
+		font-weight: 400;
 		line-height: 120%;
 		max-width: 25rem;
 		@media #{$ui-tablet} {
@@ -32,7 +32,7 @@
 	
 	&__links {
 		@include adaptiv-value('gap', 36, 8, 1);
-		a{
+		a:not(.button){
 			color: var(--color-black);
 			font-family: $ff-Roboto;
 			font-size: 1rem;

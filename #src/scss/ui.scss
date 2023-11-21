@@ -145,7 +145,7 @@
                font-size: 1rem;
                font-weight: 400;
                line-height: 130%;
-               padding: 2rem 1.5rem 0;
+               padding: .75rem 1.5rem 0;
                height: fit-content;
 		}
 
@@ -171,6 +171,7 @@
                border-radius: 5px;
                background-color: var(--color-gray);
                padding: .25rem .875rem;
+               font-weight: 600;
           }
           &__cost{
                text-align: center;
@@ -226,6 +227,9 @@
      padding-bottom: 2rem;
      .info-block__head{
           font-size: 1.5rem;
+          height: auto;
+          padding: 22px 0;
+          font-weight: 600;
      }
      .info-block__text{
           &>p{
@@ -312,6 +316,11 @@
 .partner {
 		&__item-wrapper {
                border-right: 1.5px solid var(--color-green);
+               @media (max-width: 992px) {
+                    border-right: 0;
+               }
+               display: grid;
+               place-items: center;
           }
           &__item{
                border-radius: 10px;
@@ -319,4 +328,23 @@
                width: 250px;
                height: 80px;
           }
+}
+
+.hover-orange{
+     transition: $transition-3;
+     @media #{$mouse-device} {
+          &:hover{
+               color: var(--color-brown);
+          }
+     }
+}
+
+
+section.container{
+     &:not(:first-of-type){
+          margin-top: 6.25rem;
+          @media #{$ui-tablet} {
+               margin-top: 2.5rem;
+          }
+     }
 }

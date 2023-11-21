@@ -7,6 +7,12 @@
      @media #{$ui-tablet} {
           height: 579px;
      }
+     .banner-content{
+          margin-top: 5.75rem;
+          @media #{$ui-tablet} {
+               margin-top: 5rem;
+          }
+     }
      &__preview {
           padding: 3rem 2.25rem 1.25rem ;
           border-radius: 0px 0px 15px 15px;
@@ -62,6 +68,7 @@
      }
      .opportun-block{
           &__text{
+               height: 72px;
                font-size: 1.25rem;
                span{
                     font-size: 2rem;
