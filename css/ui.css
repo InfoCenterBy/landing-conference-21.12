@@ -396,3 +396,9 @@ section.container:not(:first-of-type) {
     margin-top: 2.5rem;
   }
 }
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: var(--color-black);
+  }
+}

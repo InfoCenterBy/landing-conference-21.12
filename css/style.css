@@ -619,6 +619,12 @@ section.container:not(:first-of-type) {
   }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  a:hover {
+    color: var(--color-black);
+  }
+}
+
 .faq-block .accordion-item {
   border-radius: 15px;
   border: 1.5px solid var(--color-green);
