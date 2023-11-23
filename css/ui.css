@@ -402,3 +402,11 @@ section.container:not(:first-of-type) {
     color: var(--color-black);
   }
 }
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-black);
+}
