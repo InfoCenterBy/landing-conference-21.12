@@ -28,19 +28,19 @@ document
           }
      });
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.photo-slider-main.swiper', {
      // Optional parameters
      direction: 'horizontal',
      loop: true,
      pagination: {
-          el: '.swiper-pagination',
+          el: '.photo-slider-main .swiper-pagination',
           type: 'fraction',
      },
      slidesPerView: 1,
      // Navigation arrows
      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.photo-slider-main .swiper-button-next',
+          prevEl: '.photo-slider-main .swiper-button-prev',
      },
      centeredSlides: true,
      effect: 'coverflow',
