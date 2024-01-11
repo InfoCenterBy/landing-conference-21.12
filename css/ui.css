@@ -27,6 +27,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.no-hover {
+  pointer-events: none;
+}
+
 .fs-12 {
   font-size: 0.75rem !important;
 }
@@ -49,6 +53,10 @@
 
 .fs-24 {
   font-size: 1.5rem !important;
+}
+
+.fs-28 {
+  font-size: 1.75rem !important;
 }
 
 .border-15 {
@@ -409,4 +417,39 @@ a:visited {
 
 a:hover {
   color: var(--color-black);
+}
+
+.swiper {
+  height: 30rem;
+}
+
+.swiper-slide {
+  width: 100%;
+  max-width: 59rem;
+  height: 30rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding-bottom: 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  max-width: 60rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 27.5rem;
+  border-radius: 1.25rem;
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.45)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.45));
+}
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.45)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.45));
 }

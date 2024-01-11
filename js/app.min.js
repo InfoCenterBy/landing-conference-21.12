@@ -27,3 +27,29 @@ document
                e.target.innerHTML = 'Читать полностью';
           }
      });
+
+const swiper = new Swiper('.swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+     // loop: true,
+     pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+     },
+     slidesPerView: '2',
+     // Navigation arrows
+     navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+     },
+     centeredSlides: true,
+     effect: 'coverflow',
+     coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 200,
+          modifier: 1,
+          slideShadows: true,
+     },
+     initialSlide: 1,
+});
