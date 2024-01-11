@@ -46,10 +46,11 @@ const swiper = new Swiper('.swiper', {
      effect: 'coverflow',
      coverflowEffect: {
           rotate: 0,
-          stretch: 0,
+          stretch: 60,
           depth: 200,
-          modifier: 1,
+          // modifier: 2,
           slideShadows: true,
+          scale: 0.9,
      },
      initialSlide: 1,
 });
