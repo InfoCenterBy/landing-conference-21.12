@@ -18,8 +18,8 @@
 }
 
 .bootsrtap-icon,
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper.photo-slider-main .swiper-button-next:after,
+.swiper.photo-slider-main .swiper-button-prev:after {
   display: inline-block;
   font-family: bootstrap-icons !important;
   font-style: normal;
@@ -243,8 +243,8 @@ body {
 }
 
 .bootsrtap-icon,
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper.photo-slider-main .swiper-button-next:after,
+.swiper.photo-slider-main .swiper-button-prev:after {
   display: inline-block;
   font-family: bootstrap-icons !important;
   font-style: normal;
@@ -654,11 +654,11 @@ a:hover {
   color: var(--color-black);
 }
 
-.swiper {
+.swiper.photo-slider-main {
   height: 30rem;
 }
 
-.swiper-slide {
+.swiper.photo-slider-main .swiper-slide {
   width: 100%;
   max-width: 59rem;
   height: 30rem;
@@ -668,8 +668,7 @@ a:hover {
   place-items: center;
   padding-bottom: 30px;
 }
-
-.swiper-slide img {
+.swiper.photo-slider-main .swiper-slide img {
   display: block;
   width: 100%;
   max-width: 60rem;
@@ -678,40 +677,33 @@ a:hover {
   height: 27.5rem;
   border-radius: 1.25rem;
 }
-
-.swiper-3d .swiper-slide-shadow-right {
+.swiper.photo-slider-main .swiper-slide-shadow-right {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.4));
 }
-
-.swiper-3d .swiper-slide-shadow-left {
+.swiper.photo-slider-main .swiper-slide-shadow-left {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.4));
 }
-
-.swiper-button-next:after {
+.swiper.photo-slider-main .swiper-button-next:after {
   content: '\f134';
 }
-
-.swiper-button-prev:after {
+.swiper.photo-slider-main .swiper-button-prev:after {
   content: '\f12a';
 }
-
-.swiper-button-next,
-.swiper-button-prev {
+.swiper.photo-slider-main .swiper-button-next,
+.swiper.photo-slider-main .swiper-button-prev {
   color: var(--color-light);
   -webkit-transition: all ease-out 0.2s;
   transition: all ease-out 0.2s;
 }
-
 @media (hover: hover) and (pointer: fine) {
-  .swiper-button-next:hover,
-  .swiper-button-prev:hover {
+  .swiper.photo-slider-main .swiper-button-next:hover,
+  .swiper.photo-slider-main .swiper-button-prev:hover {
     color: var(--color-brown);
   }
 }
-
-.swiper-pagination-total {
+.swiper.photo-slider-main .swiper-pagination-total {
   color: var(--color-gray-inputs);
 }
 
