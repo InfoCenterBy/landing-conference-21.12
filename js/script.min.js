@@ -36,7 +36,7 @@ const swiper = new Swiper('.swiper', {
           el: '.swiper-pagination',
           type: 'fraction',
      },
-     slidesPerView: '2',
+     slidesPerView: 1,
      // Navigation arrows
      navigation: {
           nextEl: '.swiper-button-next',
@@ -53,6 +53,11 @@ const swiper = new Swiper('.swiper', {
           scale: 0.9,
      },
      initialSlide: 1,
+     breakpoints: {
+          1000: {
+               slidesPerView: 2,
+          },
+     },
 });
 
 // window.setInterval(countDown, 1000);

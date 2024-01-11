@@ -17,7 +17,9 @@
   --color-green-light: #007a65;
 }
 
-.bootsrtap-icon {
+.bootsrtap-icon,
+.swiper-button-next:after,
+.swiper-button-prev:after {
   display: inline-block;
   font-family: bootstrap-icons !important;
   font-style: normal;
@@ -240,7 +242,9 @@ body {
   --color-green-light: #007a65;
 }
 
-.bootsrtap-icon {
+.bootsrtap-icon,
+.swiper-button-next:after,
+.swiper-button-prev:after {
   display: inline-block;
   font-family: bootstrap-icons !important;
   font-style: normal;
@@ -671,13 +675,35 @@ a:hover {
 }
 
 .swiper-3d .swiper-slide-shadow-right {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.45)));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.45));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4));
 }
 
 .swiper-3d .swiper-slide-shadow-left {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.45)));
-  background-image: linear-gradient(rgba(255, 255, 255, 0.45));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4));
+}
+
+.swiper-button-next:after {
+  content: '\f134';
+}
+
+.swiper-button-prev:after {
+  content: '\f12a';
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-light);
+  -webkit-transition: all ease-out 0.2s;
+  transition: all ease-out 0.2s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: var(--color-brown);
+  }
 }
 
 .faq-block .accordion-item {
