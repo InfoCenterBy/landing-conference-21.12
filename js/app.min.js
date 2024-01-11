@@ -31,7 +31,7 @@ document
 const swiper = new Swiper('.swiper', {
      // Optional parameters
      direction: 'horizontal',
-     // loop: true,
+     loop: true,
      pagination: {
           el: '.swiper-pagination',
           type: 'fraction',

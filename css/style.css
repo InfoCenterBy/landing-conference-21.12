@@ -711,6 +711,10 @@ a:hover {
   }
 }
 
+.swiper-pagination-total {
+  color: var(--color-gray-inputs);
+}
+
 .faq-block .accordion-item {
   border-radius: 15px;
   border: 1.5px solid var(--color-green);

@@ -482,3 +482,7 @@ a:hover {
     color: var(--color-brown);
   }
 }
+
+.swiper-pagination-total {
+  color: var(--color-gray-inputs);
+}
