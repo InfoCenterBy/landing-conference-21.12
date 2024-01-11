@@ -566,6 +566,11 @@ body {
   padding: 2rem 4rem;
   border-radius: 20px;
 }
+@media screen and (max-width: 910px) {
+  .block-text-bg {
+    padding: 1rem 0.75rem;
+  }
+}
 
 .section-title {
   font-size: 36px;
