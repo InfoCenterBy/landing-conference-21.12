@@ -24,6 +24,10 @@
      font-size: 1.5rem !important;
 }
 
+.fs-28{
+     font-size: 1.75rem !important;
+}
+
 .border-15 {
      border-radius: 15px;
 }
@@ -289,6 +293,9 @@
      line-height: normal;
      &-bg{
           padding: 2rem 4rem;
+          @media #{$ui-tablet} {
+               padding: 1rem .75rem;
+          }
           border-radius: $border-20;
      }
 }
@@ -346,5 +353,81 @@ section.container{
           @media #{$ui-tablet} {
                margin-top: 2.5rem;
           }
+     }
+}
+
+a{
+     @media #{$mouse-device} {
+     &:hover{
+               color: var(--color-black);
+          }
+     }
+}
+
+a:visited {
+     color: inherit;
+}
+
+a:hover {
+     color: var(--color-black);
+}
+
+.swiper.photo-slider-main {
+     height: 30rem;
+}
+.swiper.photo-slider-main{
+     .swiper-slide {
+     width: 100%;
+     max-width: 59rem;
+     height: 30rem;
+     border-radius: 1.25rem;
+     overflow: hidden;
+     display: grid;
+     place-items: center;
+     padding-bottom: 30px;
+          img {
+               display: block;
+               width: 100%;
+               max-width: 60rem;
+               object-fit: cover;
+               height: 27.5rem;
+               border-radius: 1.25rem;
+          }
+     }
+
+     .swiper-slide-shadow-right{
+          background-image: linear-gradient(rgba(255, 255, 255, .40));
+     }
+
+     .swiper-slide-shadow-left{
+          background-image: linear-gradient(rgba(255, 255, 255, .40));
+     }
+
+     .swiper-button-next:after{
+          content: "\F134";
+     }
+     .swiper-button-prev:after{
+          content: "\F12A";
+     }
+
+     .swiper-button-next:after, .swiper-button-prev:after{
+          @extend .bootsrtap-icon
+     }
+
+     .swiper-button-next, .swiper-button-prev{
+          color: var(--color-light);
+          transition: $transition-2;
+     }
+
+     .swiper-button-next, .swiper-button-prev{
+          @media #{$mouse-device} {
+               &:hover{
+                    color: var(--color-brown);
+               }
+          }
+     }
+
+     .swiper-pagination-total{
+          color: var(--color-gray-inputs);
      }
 }

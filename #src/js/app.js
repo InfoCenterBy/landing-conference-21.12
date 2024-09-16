@@ -27,3 +27,35 @@ document
                e.target.innerHTML = 'Читать полностью';
           }
      });
+
+const swiper = new Swiper('.photo-slider-main.swiper', {
+     // Optional parameters
+     direction: 'horizontal',
+     loop: true,
+     pagination: {
+          el: '.photo-slider-main .swiper-pagination',
+          type: 'fraction',
+     },
+     slidesPerView: 1,
+     // Navigation arrows
+     navigation: {
+          nextEl: '.photo-slider-main .swiper-button-next',
+          prevEl: '.photo-slider-main .swiper-button-prev',
+     },
+     centeredSlides: true,
+     effect: 'coverflow',
+     coverflowEffect: {
+          rotate: 0,
+          stretch: 60,
+          depth: 200,
+          // modifier: 2,
+          slideShadows: true,
+          scale: 0.9,
+     },
+     initialSlide: 1,
+     breakpoints: {
+          1000: {
+               slidesPerView: 2,
+          },
+     },
+});

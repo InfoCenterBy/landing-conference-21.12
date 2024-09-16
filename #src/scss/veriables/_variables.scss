@@ -67,3 +67,7 @@ $layer-modal: 4;
      -moz-osx-font-smoothing: grayscale;
 }
 // *?------*
+
+.no-hover{
+     pointer-events: none;
+}

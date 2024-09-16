@@ -5,10 +5,10 @@
      background-repeat: no-repeat;
      background-size: cover;
      @media #{$ui-tablet} {
-          height: 579px;
+          height: 679px;
      }
      .banner-content{
-          margin-top: 5.75rem;
+          margin-top: 5.45rem;
           @media #{$ui-tablet} {
                margin-top: 5rem;
           }
@@ -46,7 +46,7 @@
           @media #{$ui-tablet} {
                line-height: normal;
           }
-          @include adaptiv-value('margin-top', 60, 18, 1);
+          // @include adaptiv-value('margin-top', 60, 18, 1);
      }
      &__hr-wrapper{
           position: relative;
