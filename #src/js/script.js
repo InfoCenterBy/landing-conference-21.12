@@ -1,2 +1,2 @@
 @@include('app.js', {})
-// @@include('counter.js', {})
+@@include('counter.js', {})
