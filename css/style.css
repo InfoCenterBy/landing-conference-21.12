@@ -748,6 +748,11 @@ a:hover {
   font-weight: 600;
   line-height: normal;
 }
+@media screen and (max-width: 910px) {
+  .form-title {
+    font-size: 1.25rem;
+  }
+}
 
 .main-form {
   padding: 1.25rem 1.5rem;
@@ -1057,4 +1062,8 @@ a:hover {
   color: var(--color-black);
   font-weight: 400;
   line-height: 130%;
+}
+
+.mt-100 {
+  margin-top: 6.25rem;
 }
