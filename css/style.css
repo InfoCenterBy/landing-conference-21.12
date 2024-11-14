@@ -1067,3 +1067,9 @@ a:hover {
 .mt-100 {
   margin-top: 6.25rem;
 }
+
+@media (hover: hover) and (pointer: fine) {
+  a span.color-brown:hover {
+    color: var(--color-black);
+  }
+}
