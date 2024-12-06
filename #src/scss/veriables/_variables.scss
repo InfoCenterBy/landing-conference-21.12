@@ -4,28 +4,28 @@ $maxWidthContainer: 1436;
 // $maxWidthContainerPersonal: 1830;
 
 // *Colors*
-:root{
-     --color-white: #FFF;
-     --color-light: #F9B974;
-     --color-green: #00654D;
-     --color-black: #070707;
-     --color-graybg: #F9F9F9;
-     --color-brown: #C47A2C;
-     --color-gray-inputs: #B1B1B1;
-     --color-red: #E94646;
-     --color-dark-gray: #66605B;
-     --color-gray: #E7E7E7;
-     --color-green-light: #007A65;
+:root {
+  --color-white: #fff;
+  --color-light: #f9b974;
+  --color-green: #00654d;
+  --color-black: #070707;
+  --color-graybg: #f9f9f9;
+  --color-brown: #c47a2c;
+  --color-gray-inputs: #b1b1b1;
+  --color-red: #e94646;
+  --color-dark-gray: #66605b;
+  --color-gray: #e7e7e7;
+  --color-green-light: #007a65;
+  --color-gray-game: #ededed;
 }
 // *------*
 
-
 // *! Fonts*
 $fontSize: 16px;
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-$ff-Roboto: 'Roboto';
-@import url('https://fonts.googleapis.com/css?family=Open Sans');
-$ff-OpSans: 'Open Sans';
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+$ff-Roboto: "Roboto";
+@import url("https://fonts.googleapis.com/css?family=Open Sans");
+$ff-OpSans: "Open Sans";
 // *!------*
 
 // *? Border*
@@ -35,18 +35,17 @@ $border-20: 20px;
 // *?------*
 
 // *! Transition *
-$transition-2: all ease-out .2s;
-$transition-3: all ease-out .3s;
+$transition-2: all ease-out 0.2s;
+$transition-3: all ease-out 0.3s;
 // *!------*
 
-
 // *? Media rules*
-$mouse-device: '(hover: hover) and (pointer: fine)';
-$ui-mobile: 'screen and (max-width: 650px)';
-$ui-tablet: 'screen and (max-width: 910px)';
+$mouse-device: "(hover: hover) and (pointer: fine)";
+$ui-mobile: "screen and (max-width: 650px)";
+$ui-tablet: "screen and (max-width: 910px)";
 // *?------*
 
-// *! z-indexs* 
+// *! z-indexs*
 $layer-back: -1;
 $layer-base: 2;
 $layer-ui: 3; //header, footer, menu
@@ -54,20 +53,20 @@ $layer-modal: 4;
 // *!------*
 
 // ? bootstrap icon class
-.bootsrtap-icon{
-     display: inline-block;
-     font-family: bootstrap-icons !important;
-     font-style: normal;
-     font-weight: normal !important;
-     font-variant: normal;
-     text-transform: none;
-     line-height: 1;
-     vertical-align: -.125em;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
+.bootsrtap-icon {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 // *?------*
 
-.no-hover{
-     pointer-events: none;
+.no-hover {
+  pointer-events: none;
 }

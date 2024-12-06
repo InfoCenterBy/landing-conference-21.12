@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html-comp/_head.html',{ "title":"Практическая конференция", })
+
+  <body style="background-image: none">
+    <div class="wrapper landing-nalog landing-uns landing-sdfl position-relative">
+      <header class="py-4 shadow-sm position-fixed w-100 z-10 bg-white">
+        <div class="container">
+          <div class="header-landing__body d-flex justify-content-between align-items-center position-relative">
+            <a href="index.html" class="header-logo d-flex align-items-center gap-3">
+              <img class="logo" src="./img/world-of-taxes/logo-rup.png" alt="Лого РУП" />
+              <img class="logo" src="./img/world-of-taxes/logo-mns.png" alt="Лого МНС" />
+            </a>
+            <div class="ml-sm-3 d-flex align-items-center flex-row flex-wrap gap-3">
+              <ul class="list-style-none d-flex gap-5 align-items-center mb-0">
+                <li><a href="">Об игре</a></li>
+                <li><a href="">Правила игры</a></li>
+                <li><a href="">А знаете ли вы?</a></li>
+                <li><a href="">Карточки заданий</a></li>
+                <li><a href="">Знаковые места</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="pt-5">
+        <div class="my-5">
+          <div class="container mt-5">
+            <section class="bg-gray-game px-md-4 px-3 py-5 rounded-4 mt-4">
+              <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-xl-5 col-12 ml-0 ml-lg-5">
+                  <img src="./img/world-of-taxes/banner-text.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col-xl-5 col-12">
+                  <img src="./img/world-of-taxes/banner-image.png" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </section>
+            <section class="mt-5 pt-4">
+              <h2 class="section-title mb-4">Об игре</h2>
+              <div>
+                <div>
+                  <p>
+                    Во все времена государство нуждалась в средствах для выполнения своих функций. Методы привлечения их были разные.
+                    Собирать налоги очень непросто. В настоящее время существует налоговая система, благодаря которой и осуществляется сбор
+                    платежей в пользу государства.
+                  </p>
+                  <p>
+                    А профессия человека, который следит за тем, чтобы граждане и предприятия своевременно и в полном объёме платили налоги,
+                    называется <span class="color-green-light fw-semibold">НАЛОГОВЫЙ ИНСПЕКТОР</span>.
+                  </p>
+                  <p>
+                    <img src="./img/world-of-taxes/green-lamp.png" alt="Зеленый фонарь" />
+                    <span class="fw-semibold">Именно в роли налогового инспектора мы предлагаем вам поучавствовать в этой игре.</span>
+                  </p>
+                </div>
+                <div>
+                  <div>
+                    <ul>
+                      <li><img src="./img/world-of-taxes/check.png" alt="" />А что такое налоги и зачем их платить?</li>
+                      <li><img src="./img/world-of-taxes/check.png" alt="" />А кто и как их собирает?</li>
+                      <li><img src="./img/world-of-taxes/check.png" alt="" />Куда тратятся собранные налоги?</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>
+                      <img src="./img/world-of-taxes/yellow-lamp.png" alt="Желтый фонарь" />На эти и другие вопросы вы получите ответы,
+                      сыграв в игру Мир налогового периода, а также приобретете массу полезных знаний, которые несомненно вам пригодятся 0
+                      в жизни.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      @@include('./html-comp/_footer.html') @@include('./html-comp/_script.html')
+    </div>
+    <script>
+      $(function () {
+        $('a[href^="#"]').click(function (event) {
+          var target = $(this).attr("href");
+          $("html, body").animate({ scrollTop: $(target).offset().top - 10 }, 800);
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>
