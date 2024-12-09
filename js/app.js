@@ -17,6 +17,15 @@
           );
      });
 })();
+const burger = document.getElementById('burger');
+const menu = document.getElementById('menu');
+if (burger) {
+     burger.addEventListener('click', () => {
+          burger.classList.toggle('active');
+          menu.classList.toggle('active');
+     });
+}
+
 
 document
      .querySelector('#collapseProgrammBtn')
@@ -59,3 +68,4 @@ const swiper = new Swiper('.photo-slider-main.swiper', {
           },
      },
 });
+
