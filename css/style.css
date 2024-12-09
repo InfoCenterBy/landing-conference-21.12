@@ -439,12 +439,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
+  background-color: var(--color-white);
   height: 100vh;
-  top: 90px;
+  top: 88px;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: 19;
+  z-index: 2;
 }
 
 :root {
