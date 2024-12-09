@@ -45,6 +45,7 @@
 }
 
 .link-green {
+  color: var(--color-black);
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
