@@ -71,8 +71,15 @@
 }
 
 .link-with-icon {
+  color: var(--color-green-light);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+.link-with-icon:visited {
+  color: var(--color-green-light);
+}
+.link-with-icon:hover {
+  color: var(--color-black);
 }
 .link-with-icon i {
   -webkit-transform: translateX(0);
