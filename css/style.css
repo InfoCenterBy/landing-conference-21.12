@@ -379,6 +379,14 @@ body {
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 122, 101, 0.2);
           box-shadow: 0 0 0 0.2rem rgba(0, 122, 101, 0.2);
 }
+.pagination .page-item:first-child .page-link {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
 .burger {
   width: 24px;
