@@ -26,7 +26,16 @@
 }
 
 .link-with-icon {
+  color: var(--color-green-light);
   transition: all 0.2s ease;
+
+  &:visited {
+    color: var(--color-green-light);
+  }
+
+  &:hover {
+    color: var(--color-black);
+  }
 
   & i {
     transform: translateX(0);
