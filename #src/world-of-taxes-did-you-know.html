@@ -4,46 +4,18 @@
 
   <body style="background-image: none">
     <div class="wrapper landing-nalog landing-uns landing-sdfl position-relative">
-      <header class="py-3 shadow position-fixed w-100 z-10 bg-white" style="z-index: 10">
-        <div class="container">
-          <div class="header-landing__body d-flex justify-content-between align-items-center position-relative">
-            <a href="index.html" class="header-logo d-flex align-items-center gap-3">
-              <img class="logo" src="./img/png/logo-header-v2.png" alt="Лого РУП" />
-              <img class="logo" src="./img/png/logo-header.png" alt="Лого МНС" />
-            </a>
-            <div class="ml-sm-3 align-items-center flex-row flex-wrap gap-3 d-none d-md-flex">
-              <ul class="list-style-none d-flex gap-5 align-items-center mb-0">
-                <li><a class="link-green" href="world-of-taxes.html">Об игре</a></li>
-                <li><a class="link-green" href="world-of-taxes-did-you-know.html">А знаете ли вы?</a></li>
-              </ul>
-            </div>
-            <div class="burger d-flex d-md-none" id="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-        <nav class="menu" id="menu">
-          <ul class="list-style-none d-flex flex-column justify-content-center gap-3 align-items-center mb-0">
-            <li><a class="link-green fs-18" href="world-of-taxes.html">Об игре</a></li>
-            <li><a class="link-green fs-18" href="world-of-taxes-did-you-know.html">А знаете ли вы?</a></li>
-          </ul>
-        </nav>
-      </header>
-
+      @@include('./html-comp/_header-game.html')
 
       <main class="pt-5">
         <div class="my-5">
           <div class="container mt-1">
             <section class="pt-4 mb-5">
-              <ol class="breadcrumb mt-0">
+              <ul class="breadcrumb mt-0">
                 <li class="breadcrumb-item mr-3">
                   <a href="world-of-taxes.html">Главная<i class="bi-chevron-right ml-2"></i></a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">А знаете ли вы?</li>
-              </ol>
+              </ul>
               <h2 class="section-title mb-4">А знаете ли вы?</h2>
               <div class="game-cards-container z-1 lh-21">
                 <a
@@ -1071,51 +1043,7 @@
           </div>
         </div>
       </main>
-      <footer class="footer mt-5">
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-xl-1 my-2">
-              <div class="d-flex flex-row gap-2 footer__logo align-items-center">
-                <img src="./img/png/logo-header-v2.png" alt="РУП «Информационно-издательский центр по налогам и сборам»" />
-                <img src="./img/png/logo-header.png" alt="Лого МНС" />
-              </div>
-            </div>
-            <div class="col-xl-10 my-2">
-              <div class="row justify-content-end">
-                <div class="col-lg-2 d-flex justify-content-xl-end justify-content-lg-center my-1">
-                  <a href="world-of-taxes.html" target="_blank" rel="noopener noreferrer" class="link-green fs-20 fw-medium" style="font-weight: 500">
-                    Об игре
-                  </a>
-                </div>
-                <div class="col-lg-2 d-flex justify-content-xl-end justify-content-lg-center my-1">
-                  <a href="world-of-taxes-did-you-know.html" target="_blank" rel="noopener noreferrer" class="link-green fs-20 fw-medium" style="font-weight: 500">
-                    А знаете ли вы?
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-between mt-4 align-content-center">
-            <div class="col-lg-6 mt-4 mt-lg-0 order-3 order-lg-1">
-              Сайт разработан: <a class="link-green" href="https://info-center.by/">РУП «Информационно-издательский центр по налогам и&nbsp;сборам»</a>
-            </div>
-            <div class="col-lg-5 d-flex justify-content-lg-end order-1 order-lg-2 align-content-center">
-              <p class="mb-0">Идея: «Свидинская Тамара Владимировна»</p>
-            </div>
-            <div class="col-lg-5 mt-lg-2 mt-2 order-4 order-lg-3">© 2024, Все права защищены</div>
-          </div>
-        </div>
-      </footer>
-      @@include('./html-comp/_script.html')
+      @@include('./html-comp/_footer-game.html') @@include('./html-comp/_script.html')
     </div>
-    <script>
-      $(function () {
-        $('a[href^="#"]').click(function (event) {
-          var target = $(this).attr("href");
-          $("html, body").animate({ scrollTop: $(target).offset().top - 10 }, 800);
-          return false;
-        });
-      });
-    </script>
   </body>
 </html>
