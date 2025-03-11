@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html-comp/_head.html',{ "title":"Мир налогового периода", })
+
+  <body style="background-image: none">
+    <div class="flex flex-column wrapper landing-nalog landing-uns landing-sdfl position-relative">
+      @@include('./html-comp/_header-game.html')
+      <main class="pt-5">
+        <div class="my-5">
+          <div class="container mt-1 mt-lg-5 py-3">
+            <section class="pt-4 about-card mx-auto">
+              <div class="rounded-4 bg-green-light-game p-32 color-white mb-4">
+                <div class="d-flex gap-2 gap-lg-4 flex-wrap justify-content-center">
+                  <img class="image-404" src="./img/world-of-taxes/404-img.png" alt="404" />
+                  <p class="text-404 mb-0">404</p>
+                </div>
+              </div>
+              <div class="d-flex flex-column justify-content-center align-items-center">
+                <p class="mb-2 text-center">Мы не смогли найти страницу которую вы запрашиваете.</p>
+                <p class="mb-2 text-center">Возможно она была удалена или вы ввели неверный адрес.</p>
+                <a class="link-with-icon--left color-green-light d-flex gap-2 font-medium align-self-center" href="world-of-taxes.html"
+                  ><i class="d-inline-block color-green-light bi bi-arrow-left"></i>Вернуться на главную</a
+                >
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      @@include('./html-comp/_footer-game.html') @@include('./html-comp/_script.html')
+    </div>
+  </body>
+</html>
