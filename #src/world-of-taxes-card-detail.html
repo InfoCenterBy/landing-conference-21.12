@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html-comp/_head.html',{ "title":"Собираем налоги", })
+
+  <body style="background-image: none">
+    <div class="wrapper landing-nalog landing-uns landing-sdfl position-relative">
+      @@include('./html-comp/_header-game.html')
+      <main class="pt-5 flex-grow-1">
+        <div class="my-5">
+          <div class="container mt-1">
+            <section class="pt-4 mb-5">
+              <ol class="breadcrumb mt-0">
+                <li class="breadcrumb-item mr-3">
+                  <a href="world-of-taxes.html">Главная<i class="bi-chevron-right ml-2"></i></a>
+                </li>
+                <li class="breadcrumb-item mr-3">
+                  <a href="world-of-taxes-did-you-know.html">А знаете ли вы?<i class="bi-chevron-right ml-2"></i></a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Собираем налоги №1</li>
+              </ol>
+              <h2 class="section-title mb-4">Собираем налоги</h2>
+              <div class="video-container">
+                <video controls>
+                  <source src="./img/world-of-taxes/Card_green_1_1.mp4" type="video/mp4" />
+                  Ваш браузер не поддерживает встроенные видео
+                </video>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      @@include('./html-comp/_footer-game.html') @@include('./html-comp/_script.html')
+    </div>
+  </body>
+</html>

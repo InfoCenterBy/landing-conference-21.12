@@ -1,30 +1,56 @@
-     .color-black{
-          color: var(--color-black);
-     }
-     .color-white{
-          color: var(--color-white);
-     }
-     .color-brown{
-          color: var(--color-brown);
-     }
-     .color-green{
-          color: var(--color-green);
-     }
-     .color-dark-gray{
-          color: var(--color-dark-gray);
-     }
+.color-black {
+  color: var(--color-black);
+}
+.color-white {
+  color: var(--color-white);
+}
+.color-brown {
+  color: var(--color-brown);
+}
+.color-green {
+  color: var(--color-green);
+}
+.color-dark-gray {
+  color: var(--color-dark-gray);
+}
+.color-green-light {
+  color: var(--color-green-light);
+}
+.color-brown-game {
+  color: var(--color-brown-game);
+}
+.color-red-game {
+  color: var(--color-red-game);
+}
 
+.bg-gray {
+  background-color: var(--color-graybg);
+}
+.bg-green {
+  background-color: var(--color-green);
+}
+.bg-white {
+  background-color: var(--color-white);
+}
+.bg-gray-game {
+  background-color: var(--color-gray-game);
+}
+.bg-red-game {
+  background-color: var(--color-red-game);
+}
+.bg-brown-game {
+  background-color: var(--color-brown-game);
+}
+.bg-green-light-game {
+  background-color: var(--color-green-light);
+}
+.bg-yellow-game {
+  background-color: var(--color-yellow-game);
+}
 
-     .bg-gray {
-          background-color: var(--color-graybg);
-     }
-     .bg-green {
-          background-color: var(--color-green);
-     }
-     .bg-white{
-          background-color: var(--color-white);
-     }
-
-     .border-green {
-          border: 1.5px solid var(--color-green);
-     }
+.border-green {
+  border: 1.5px solid var(--color-green);
+}
+.border-green-game {
+  border: 1px solid var(--color-green-light);
+}
