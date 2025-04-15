@@ -3,6 +3,9 @@
      font-style: normal;
      font-weight: 600;
      line-height: normal;
+     @media #{$ui-tablet} {
+          font-size: 1.25rem;
+     }
 }
 
 .main-form {

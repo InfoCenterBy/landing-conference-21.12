@@ -67,3 +67,17 @@ body{
 @import './ui-comp/banner';
 @import './ui-comp/programm-conf';
 @import './ui-comp/footer';
+
+.mt-100{
+     margin-top: 6.25rem;
+}
+
+a{
+     span.color-brown{
+          @media #{$mouse-device} {
+               &:hover{
+                    color: var(--color-black);
+               }
+          }
+     }
+}
