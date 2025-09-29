@@ -343,13 +343,13 @@
       </div>
       <div class="my-2 mobile-w-100">
         <div class="d-flex gap-3 flex-column flex-md-row">
-          <a href="world-of-taxes-about-game.html" target="_blank" rel="noopener noreferrer" class="link-green fs-20 fw-medium" style="font-weight: 500">
+          <a href="world-of-taxes-about-game.html" rel="noopener noreferrer" class="link-green fs-20 fw-medium" style="font-weight: 500">
             Об игре
           </a>
-          <a href="world-of-taxes-did-you-know.html" target="_blank" rel="noopener noreferrer" class="link-green fs-20 fw-medium" style="font-weight: 500">
+          <a href="world-of-taxes-did-you-know.html" rel="noopener noreferrer" class="link-green fs-20 fw-medium" style="font-weight: 500">
             А знаете ли вы?
           </a>
-          <a href="world-of-taxes-about.html" target="_blank" rel="noopener noreferrer" class="link-green fs-20 fw-medium" style="font-weight: 500">
+          <a href="world-of-taxes-about.html" rel="noopener noreferrer" class="link-green fs-20 fw-medium" style="font-weight: 500">
             О проекте
           </a>
         </div>
@@ -369,6 +369,29 @@
 </footer> <script src="./js/bootstrap-bundle.min.js"></script>
 <script src="js/script.min.js"></script>
   </div>
+  <script src="./js/swiper.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      const swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    })
+  </script>
 </body>
 
 </html>
