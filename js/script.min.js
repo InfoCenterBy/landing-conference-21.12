@@ -27,6 +27,16 @@ if (burger) {
   });
 }
 
+if (menu) {
+  const links = menu.querySelectorAll("a");
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      burger.classList.toggle("active");
+      menu.classList.toggle("active");
+    });
+  });
+}
+
 document.querySelector("#collapseProgrammBtn").addEventListener("click", (e) => {
   if (!e.target.classList.contains("collapsed")) {
     e.target.innerHTML = "Свернуть";

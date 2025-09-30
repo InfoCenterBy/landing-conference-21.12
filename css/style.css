@@ -17,6 +17,7 @@
   --color-green-light: #007a65;
   --color-gray-game: #ededed;
   --color-yellow-game: #fbc469;
+  --color-yellow-light-game: #ffe1b0;
   --color-red-game: #bc2222;
   --color-brown-game: #b47e36;
   --color-green-game: #007a65;
@@ -243,6 +244,10 @@
 
 .bg-yellow-game {
   background-color: var(--color-yellow-game);
+}
+
+.bg-yellow-light-game {
+  background-color: var(--color-yellow-light-game);
 }
 
 .bg-green-game {
@@ -553,6 +558,7 @@ body {
   --color-green-light: #007a65;
   --color-gray-game: #ededed;
   --color-yellow-game: #fbc469;
+  --color-yellow-light-game: #ffe1b0;
   --color-red-game: #bc2222;
   --color-brown-game: #b47e36;
   --color-green-game: #007a65;
@@ -1572,12 +1578,45 @@ a:hover {
   line-height: 21px;
 }
 
+.world-of-taxes-socials a {
+  background-color: var(--color-white);
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.world-of-taxes-socials a:hover path {
+  fill: var(--color-green-game);
+}
+.world-of-taxes-socials path {
+  fill: #b1b1b1;
+}
+
 @media screen and (max-width: 576px) {
   .mobile-w-100 {
     width: 100%;
   }
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 .mt-48 {
   margin-top: 48px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
