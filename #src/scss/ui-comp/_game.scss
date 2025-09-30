@@ -136,12 +136,50 @@
   line-height: 21px;
 }
 
+.world-of-taxes-socials {
+  a {
+    background-color: var(--color-white);
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    transition: all 0.2s ease;
+
+    &:hover path {
+      fill: var(--color-green-game);
+    }
+  }
+
+  path {
+    fill: #b1b1b1;
+  }
+}
+
 .mobile-w-100 {
   @media screen and (max-width: 576px) {
     width: 100%;
   }
 }
 
+html {
+  scroll-padding-top: 100px;
+}
+
 .mt-48 {
   margin-top: 48px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.fs-24-to-18 {
+  font-size: 24px;
+
+  @media screen and (max-width: 576px) {
+    font-size: 18px;
+  }
 }
