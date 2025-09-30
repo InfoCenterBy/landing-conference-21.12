@@ -1620,3 +1620,12 @@ html {
 .mt-100 {
   margin-top: 100px;
 }
+
+.fs-24-to-18 {
+  font-size: 24px;
+}
+@media screen and (max-width: 576px) {
+  .fs-24-to-18 {
+    font-size: 18px;
+  }
+}
